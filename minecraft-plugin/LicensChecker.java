@@ -29,7 +29,7 @@ public class LicensChecker {
 
     public String checkLicense() {
         try {
-            String requestURL = String.format("https://licens.zeniqzs.eu/dashboard/php/check.php?ip=%s&port=%d&plugin=%s&key=%s",
+            String requestURL = String.format("https://{YOUR DOMAIN}/dashboard/php/check.php?ip=%s&port=%d&plugin=%s&key=%s",
                     URLEncoder.encode(serverIP, "UTF-8"),
                     serverPort,
                     URLEncoder.encode(pluginName, "UTF-8"),
